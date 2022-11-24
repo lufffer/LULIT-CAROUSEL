@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "removeComments": true
+  }
+}
