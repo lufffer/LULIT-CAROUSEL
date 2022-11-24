@@ -5,6 +5,7 @@
     "target": "ES6",
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "removeComments": true
+    "removeComments": true,
+    "declaration": true
   }
 }

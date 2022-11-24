@@ -28,9 +28,14 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   },
+  "files": [
+    "src/",
+    "dist/"
+  ],
   "name": "lulit-carousel",
   "version": "1.0.0",
   "main": "dist/lulit-carousel.js",
+  "types": "dist/lulit-carousel.d.ts",
   "description": "Carousel built with lit-element",
   "repository": {
     "type": "git",
