@@ -6,6 +6,8 @@
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     "removeComments": true,
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "dist",
+    "declarationMap": true
   }
 }
