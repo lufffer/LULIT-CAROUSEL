@@ -1,0 +1,8 @@
+src/
+config/
+public/
+dist/*.d.ts.map
+.stylelintignore
+.*.json
+*.json
+webpack.config.cjs
