@@ -1,6 +1,8 @@
 import { LitElement, html } from "lit";
 import { customElement, query, queryAll, property } from "lit/decorators.js";
 import styles from "./styles";
+import leftChevron from "./imgs/left-chevron.svg";
+import rightChevron from "./imgs/right-chevron.svg";
 
 @customElement("lulit-carousel")
 class LuLitCarousel extends LitElement {
@@ -213,14 +215,14 @@ class LuLitCarousel extends LitElement {
         <slot name="next"></slot>
       </div>
       <button class="left-chevron" id="left-chevron" @click=${this.handleMove}>
-        <img src="./imgs/left-chevron.svg" />
+        <img src=${leftChevron} />
       </button>
       <button
         class="right-chevron"
         id="right-chevron"
         @click=${this.handleMove}
       >
-        <img src="./imgs/right-chevron.svg" />
+        <img src=${rightChevron} />
       </button>
       <div class="indicators">${indicators}</div>
     `;

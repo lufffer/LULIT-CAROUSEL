@@ -1,5 +1,4 @@
 const TerserJSPlugin = require("terser-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 const PATHS = {
@@ -20,11 +19,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: [{ from: path.join(PATHS.src, "imgs"), to: "./imgs" }],
-    }),
-  ],
   optimization: {
     minimizer: [new TerserJSPlugin({ extractComments: false })],
   },
