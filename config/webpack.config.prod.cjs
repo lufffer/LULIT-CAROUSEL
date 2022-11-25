@@ -17,6 +17,11 @@ module.exports = {
         use: ["ts-loader"],
         exclude: /node_modules/,
       },
+      {
+        test: /\.svg$/,
+        use: ["file-loader"],
+        exclude: /node_modules/,
+      },
     ],
   },
   optimization: {
