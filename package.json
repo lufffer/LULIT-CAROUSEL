@@ -33,7 +33,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "name": "lulit-carousel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/lulit-carousel.js",
   "types": "dist/lulit-carousel.d.ts",
   "description": "Carousel built with lit-element",
