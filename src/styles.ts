@@ -6,6 +6,7 @@ const styles = css`
     width: 200px;
     height: 200px;
     border-radius: 1rem;
+    display: block;
     overflow: hidden;
   }
 
