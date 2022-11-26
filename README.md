@@ -49,6 +49,6 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 ## Maintainer
 
-| <img src="./yo.png" /> |
-| ---------------------- |
-| Cajal Fernando Lautaro |
+| <img src="./yo.png" width="200" height="200" /> |
+| ----------------------------------------------- |
+| Cajal Fernando Lautaro                          |
