@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: ["file-loader"],
+        use: ["url-loader"],
         exclude: /node_modules/,
       },
     ],

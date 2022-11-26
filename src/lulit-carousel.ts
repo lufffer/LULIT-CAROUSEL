@@ -215,7 +215,7 @@ class LuLitCarousel extends LitElement {
         <slot name="next"></slot>
       </div>
       <button class="left-chevron" id="left-chevron" @click=${this.handleMove}>
-        <img src=${leftChevron} />
+      <img src=${leftChevron} />
       </button>
       <button
         class="right-chevron"
