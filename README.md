@@ -40,7 +40,14 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 `lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration`
 
-| Attribute | Functionality                                                                                                   |
-| --------- | --------------------------------------------------------------------------------------------------------------- |
-| ride      | Boolean, default: `false`, if true then active `dir` and `time` functionality                                   |
-| dir       | String, default: `right`, if `ride` is true then `dir` define the direction, posibles values: `right` \| `left` |
+| Attribute | Functionality                                                                                                  |
+| --------- | -------------------------------------------------------------------------------------------------------------- |
+| ride      | default: `false`, if `true` then active `dir` and `time` functionality                                         |
+| dir       | default: `"right"`, if `ride` is true then `dir` defines the direction, possible values: `"right"` \| `"left"` |
+| time      | default: `"5000"`, defines the time between transitions in miliseconds                                         |
+| duration  | default: `"0.5"`, defines the duration of the transition in seconds                                            |
+
+## Maintainer
+
+| ![Cajal Fernando Lautaro](./yo.jpg "Cajal Fernando Lautaro") |
+| Cajal Fernando Lautaro |
