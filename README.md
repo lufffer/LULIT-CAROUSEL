@@ -40,5 +40,5 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 `lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration`
 
-|Attribute||Functionality|
-|--||--|
+| Attribute | Functionality |
+| --------- | ------------- |
