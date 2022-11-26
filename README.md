@@ -40,5 +40,7 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 `lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration`
 
-| Attribute | Functionality |
-| --------- | ------------- |
+| Attribute | Functionality                                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------------------------- |
+| ride      | Boolean, default: `false`, if true then active `dir` and `time` functionality                                   |
+| dir       | String, default: `right`, if `ride` is true then `dir` define the direction, posibles values: `right` \| `left` |
