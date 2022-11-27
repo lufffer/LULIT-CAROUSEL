@@ -13,7 +13,7 @@ const PATHS = {
 
 module.exports = {
   entry: {
-    "docs/lulit-carousel": path.join(__dirname, "../src", "lulit-carousel.js"),
+    "docs/lulit-carousel": path.join(__dirname, "../src", "lulit-carousel.ts"),
   },
   output: {
     filename: "[name].js",
