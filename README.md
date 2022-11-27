@@ -60,6 +60,6 @@ and you can test that example here `https://lufffer.github.io/LULIT-CAROUSEL/`
 
 ## Maintainer
 
-| <img src="./yo.png?raw=true" width="200" height="200" /> |
-| -------------------------------------------------------- |
-| Cajal Fernando Lautaro                                   |
+| <img src="https://github.com/lufffer/LULIT-CAROUSEL/yo.png?raw=true" width="200" height="200" /> |
+| ------------------------------------------------------------------------------------------------ |
+| Cajal Fernando Lautaro                                                                           |
