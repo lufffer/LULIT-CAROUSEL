@@ -36,6 +36,11 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 `ìmport LuLitCarousel from 'lulit-carousel'`
 
+## Example
+
+In the src folder of this repo you can find this example.
+``
+
 ## Configuration
 
 `lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration`

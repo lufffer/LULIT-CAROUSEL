@@ -2,7 +2,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
-    "build:dev": "cross-env NODE_ENV=development webpack"
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "build:docs": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
     "lit": "^2.4.1"
