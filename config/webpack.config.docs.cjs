@@ -8,7 +8,7 @@ const PATHS = {
 
 module.exports = {
   entry: {
-    "docs/lulit-carousel": "./src/lulit-carousel.js",
+    "docs/lulit-carousel": "./src/lulit-carousel.ts",
   },
   output: {
     filename: "[name].js",
