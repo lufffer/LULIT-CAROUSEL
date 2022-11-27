@@ -38,8 +38,8 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 ## Example
 
-In the src folder of this repo you can find this example.
-``
+In the src folder of this repo you can find this example,
+and you can test that example here `https://lufffer.github.io/LULIT-CAROUSEL/`
 
 ## Configuration
 
@@ -51,6 +51,12 @@ In the src folder of this repo you can find this example.
 | dir       | default: `"right"`, if `ride` is true then `dir` defines the direction, possible values: `"right"` \| `"left"` |
 | time      | default: `"5000"`, defines the time between transitions in miliseconds                                         |
 | duration  | default: `"0.5"`, defines the duration of the transition in seconds                                            |
+
+## Notes
+
+1. Transition animation does not use `animate` directive because it's still an experimental feature
+2. Transition animation does not use GSAP, since when I test it in a cheap mobile phone, it worked quite badly,
+   indeed, my animation works better in the same mobile phone.
 
 ## Maintainer
 

@@ -1,6 +1,7 @@
 src/
 config/
 public/
+docs/
 dist/*.d.ts.map
 .stylelintignore
 .*.json
