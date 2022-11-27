@@ -13,13 +13,13 @@ const PATHS = {
 
 module.exports = {
   entry: {
-    "docs/lulit-carousel": path.join(__dirname, "../src", "lulit-carousel.ts"),
+    docs: path.join(__dirname, "../src", "lulit-carousel.ts"),
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "../"),
+    path: path.resolve(__dirname, "../docs"),
   },
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {
@@ -42,6 +42,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(PATHS.public, "index.html"),
+      chunks: ["docs"],
     }),
     new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
