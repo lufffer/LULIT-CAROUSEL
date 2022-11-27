@@ -7,4 +7,3 @@ dist/*.d.ts.map
 .*.json
 *.json
 webpack.config.cjs
-*.png
