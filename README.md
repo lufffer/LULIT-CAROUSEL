@@ -38,7 +38,7 @@ apply some default styles and then import `LuLitCarousel` from `'lulit-carousel'
 
 ## Example
 
-In the src folder of this repo you can find this example,
+In the src folder of [this](https://github.com/lufffer/LULIT-CAROUSEL) repo you can find this example,
 and you can test that example [here](https://lufffer.github.io/LULIT-CAROUSEL/)
 
 ## Configuration
