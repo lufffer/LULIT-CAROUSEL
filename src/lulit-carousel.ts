@@ -29,7 +29,7 @@ class LuLitCarousel extends LitElement {
   private touchStartY = 0;
   private touchEndY = 0;
   private touchMoveY = 0;
-  private maxSelected = this.childElementCount - 1;
+  private maxSelected: number;
 
   private activeTransition = (move: string) => {
     if (move === "move-left") {
@@ -72,6 +72,14 @@ class LuLitCarousel extends LitElement {
     this.rightChevron.removeAttribute("disabled");
     this.selected.addEventListener("touchstart", this.handleTouchStart);
     this.selected.addEventListener("touchend", this.handleTouchEnd);
+
+    this.dispatchEvent(
+      new CustomEvent("lucarouseltransitionend", {
+        detail: { selected: this.selectedIndicator },
+        bubbles: true,
+        composed: true,
+      })
+    );
   };
 
   private moveLeft = () => {
@@ -196,6 +204,7 @@ class LuLitCarousel extends LitElement {
   }
 
   render() {
+    this.maxSelected = this.childElementCount - 1;
     const indicators = [];
 
     for (let i = 0; i <= this.maxSelected; ++i) {

@@ -43,7 +43,7 @@ and you can test that example [here](https://lufffer.github.io/LULIT-CAROUSEL/)
 
 ## Configuration
 
-`lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration`
+`lulit-carousel` accepts 4 attributes: `ride`, `dir`, `time` and `duration` and a custom event which return the current position
 
 | Attribute | Functionality                                                                                                  |
 | --------- | -------------------------------------------------------------------------------------------------------------- |
@@ -51,6 +51,32 @@ and you can test that example [here](https://lufffer.github.io/LULIT-CAROUSEL/)
 | dir       | default: `"right"`, if `ride` is true then `dir` defines the direction, possible values: `"right"` \| `"left"` |
 | time      | default: `"5000"`, defines the time between transitions in miliseconds                                         |
 | duration  | default: `"0.5"`, defines the duration of the transition in seconds                                            |
+
+| Event                   | Functionality                                           |
+| ----------------------- | ------------------------------------------------------- |
+| lucarouseltransitionend | Triggered after move to another element in the carousel |
+
+| Event    | Functionality              |
+| -------- | -------------------------- |
+| selected | Store the current position |
+
+### JS Example
+
+```
+element.addEventListener('lucarouseltransitionend', (e) => consolo.log(e.detail.selected));
+```
+
+### TS Example
+
+```
+element.addEventListener('lucarouseltransitionend', (e: CustomInitEvent) => consolo.log(e.detail.selected));
+```
+
+or
+
+```
+element.addEventListener('lucarouseltransitionend', (e: CustomEvent<number>) => consolo.log(e.detail.selected));
+```
 
 ## Notes
 
