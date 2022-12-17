@@ -52,30 +52,30 @@ and you can test that example [here](https://lufffer.github.io/LULIT-CAROUSEL/)
 | time      | default: `"5000"`, defines the time between transitions in miliseconds                                         |
 | duration  | default: `"0.5"`, defines the duration of the transition in seconds                                            |
 
-| Event                   | Functionality                                           |
-| ----------------------- | ------------------------------------------------------- |
-| lucarouseltransitionend | Triggered after move to another element in the carousel |
+| Event           | Functionality                                           |
+| --------------- | ------------------------------------------------------- |
+| lutransitionend | Triggered after move to another element in the carousel |
 
-| Event    | Functionality              |
+| Property | Functionality              |
 | -------- | -------------------------- |
 | selected | Store the current position |
 
 ### JS Example
 
 ```
-element.addEventListener('lucarouseltransitionend', (e) => consolo.log(e.detail.selected));
+element.addEventListener('lutransitionend', (e) => consolo.log(e.detail.selected));
 ```
 
 ### TS Example
 
 ```
-element.addEventListener('lucarouseltransitionend', (e: CustomInitEvent) => consolo.log(e.detail.selected));
+element.addEventListener('lutransitionend', (e: CustomInitEvent) => consolo.log(e.detail.selected));
 ```
 
 or
 
 ```
-element.addEventListener('lucarouseltransitionend', (e: CustomEvent<number>) => consolo.log(e.detail.selected));
+element.addEventListener('lutransitionend', (e: CustomEvent<number>) => consolo.log(e.detail.selected));
 ```
 
 ## Notes

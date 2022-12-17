@@ -74,7 +74,7 @@ class LuLitCarousel extends LitElement {
     this.selected.addEventListener("touchend", this.handleTouchEnd);
 
     this.dispatchEvent(
-      new CustomEvent("lucarouseltransitionend", {
+      new CustomEvent("lutransitionend", {
         detail: { selected: this.selectedIndicator },
         bubbles: true,
         composed: true,
@@ -218,13 +218,13 @@ class LuLitCarousel extends LitElement {
     }
 
     return html`
-      <div class="container"">
+      <div class="container">
         <slot name="prev"></slot>
         <slot name="selected"></slot>
         <slot name="next"></slot>
       </div>
       <button class="left-chevron" id="left-chevron" @click=${this.handleMove}>
-      <img src=${leftChevron} />
+        <img src=${leftChevron} />
       </button>
       <button
         class="right-chevron"
@@ -238,10 +238,10 @@ class LuLitCarousel extends LitElement {
   }
 }
 
-export default LuLitCarousel;
-
 declare global {
   interface HTMLElementTagNameMap {
     "lulit-carousel": LuLitCarousel;
   }
 }
+
+export default LuLitCarousel;
