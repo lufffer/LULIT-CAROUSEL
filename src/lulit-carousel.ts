@@ -8,10 +8,10 @@ import rightChevron from "./imgs/right-chevron.svg";
 class LuLitCarousel extends LitElement {
   static styles = styles;
 
-  @query("slot[name=selected]", true) private selected!: HTMLSlotElement;
-  @query("slot[name=prev]", true) private prev!: HTMLSlotElement;
-  @query("slot[name=next]", true) private next!: HTMLSlotElement;
-  @query(".container", true) private container!: HTMLDivElement;
+  @query("slot[name=selected]") private selected!: HTMLSlotElement;
+  @query("slot[name=prev]") private prev!: HTMLSlotElement;
+  @query("slot[name=next]") private next!: HTMLSlotElement;
+  @query(".container") private container!: HTMLDivElement;
   @query(".left-chevron", true) private leftChevron!: HTMLButtonElement;
   @query(".right-chevron", true) private rightChevron!: HTMLButtonElement;
 
@@ -192,7 +192,7 @@ class LuLitCarousel extends LitElement {
     }
   };
 
-  protected firstUpdated(): void {
+  protected updated(): void {
     this.children[0].setAttribute("slot", "selected");
     this.indicators[0].classList.add("selected");
     this.selectedIndicator = 0;
@@ -201,6 +201,23 @@ class LuLitCarousel extends LitElement {
     if (this.ride) {
       setInterval(() => this.handleMove(undefined), this.time || 5000);
     }
+
+    const cb = (mutationList: any) => {
+      for (const mutation of mutationList) {
+        if (mutation.type === "childList") {
+          if (this.selected.assignedElements.length > 0) {
+            this.selected.assignedElements()[0].removeAttribute("slot");
+          }
+          this.changeIndicator(this.selectedIndicator, 0);
+          this.requestUpdate();
+        }
+      }
+    };
+
+    const observer = new MutationObserver(cb);
+    observer.observe(this, {
+      childList: true,
+    });
   }
 
   render() {
